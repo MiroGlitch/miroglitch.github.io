@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="Menustyles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            body,h1,h2,h3,h4,h5,h6 {
+                color: black;
+                font-weight: bold
+            }
+
+            body {
+                font: 400 15px/1.8 Lato, sans-serif;
+                color: #777;
+                background-image: url("https://responsive.tillster.com/responsive/ck-ph/1617192539/img/ck-mobile-bg.png");
+            }
+
+            h3, h4, h1 {
+                margin: 10px 0 30px 0;
+                letter-spacing: 10px;
+                font-size: 30px;
+                color: red;
+                font-family: 'Reggae One', cursive;
+            }
+
+            .container {
+                padding: 60px 30px;
+                padding-bottom: 20px;
+            }
+
+            .bg-1 {
+                background: #2d2d30;
+                color: #bdbdbd;
+            }
+
+            .thumbnail {
+                padding: 0 0 15px 0;
+                border: none;
+                border-radius: 0;
+            }
+
+            .navbar {
+                font-family: Montserrat, sans-serif;
+                margin-bottom: 0;
+                background-color: #e91322;
+                border: 0;
+                font-size: 11px !important;
+                letter-spacing: 4px;
+                opacity: 0.9;
+            }
+
+            .navbar li a, .navbar .navbar-brand {
+                color: #d5d5d5 !important;
+            }
+
+            .navbar-nav li.active a {
+                color: #fff !important;
+                background-color: #29292c !important;
+            }
+
+            .navbar-brand {
+                padding: 5px 10px;
+            }
+
+            .navbar-default .navbar-toggle {
+                border-color: transparent;
+            }
+
+            footer {
+                background-color: #3b3b3b;
+                color: #f5f5f5;
+                padding: 10px;
+            }
+
+            footer a {
+                color: #f5f5f5;
+            }
+
+            .button {
+                position: relative;
+                background-color: #db1a25;
+                border: none;
+                float: left;
+                color: #FFFFFF;
+                padding: 10px;
+                width: 200px;
+                text-align: center;
+                transition-duration: 0.4s;
+                text-decoration: none;
+                overflow: hidden;
+                cursor: pointer;
+				transition: transform .2s; /* Animation */
+				margin: 0 auto;
+            }
+
+            .button:after {
+                content: "";
+                background: #f1f1f1;
+                display: block;
+                position: absolute;
+                padding-top: 300%;
+                padding-left: 350%;
+                margin-left: -20px !important;
+                margin-top: -120%;
+                opacity: 0;
+                transition: all 0.8s
+            }
+			
+			.button:hover {
+				transform: scale(1.1); 
+			}
+
+            footer > div > ul > li {
+                text-align: center;
+                width: 20%;
+                /* Make them the right width */
+                float: left;
+                /* And float them to get them in a line */
+            }
+
+            ul.no-bullets {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                width: 90vh;
+            }
+
+            .footermenu {
+                margin: auto;
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+            }
+
+            h2 {
+                font-weight: bold;
+                color: black;
+                font-size: 30px;
+                margin-bottom: 20px;
+            }
+
+            .buttonbuttom {
+                display: flex;
+                justify-content: center;
+                padding: 30px;
+            }
+
+            .thumbnail {
+                background-color: transparent;
+            }
+
+            .bg-1 {
+                background-color: transparent;
+            }
+            
+            .effect{
+				transition: transform .2s; /* Animation */
+				width: 200px;
+				height: 200px;
+				margin: 0 auto;
+			}
+            
+            .effect:hover {
+				transform: scale(1.1); 
+			}
+        </style>
+    </head>
+    <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="https://www.chowking.com/">
+                        <img class="navbar-brand" src="https://lh3.googleusercontent.com/pw/ACtC-3c4AYXtxXcw-twA837V5vAKWNvruf9tI6zds9UK-fevhVLWxrg02GwrKo7Vt__7Ehu-YcKQ6ipfhSyE1JnL8ENcIcHcJysRCbU7enjysW9UuHHuWEnEZYmfTrcfijrCRgG7CVAW6tj1h9JUe1hLomA=w153-h38-no" alt="ChowkingLogo">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a style="font-weight:bold; color:black" href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a style="font-weight:bold; color:black" href="WhoWeAre.html">WHO WE ARE</a>
+                        </li>
+                        <li>
+                            <a style="font-weight:bold; color:black" href="#myPage">MENU</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <div class="container text-center">
+            <h1>OUR MENU</h1>
+        </div>
+        <!-- !PAGE CONTENT! -->
+        <div class="mj-main mj-content mj-padding" style="max-width:1200px;margin-top:0px">
+            <!-- Menu -->
+            <div id="tour" class="bg-1">
+                <div class="row text-center">
+                    <!-- 1st Grid -->
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-good-for-sharing">
+                                <img src="https://ck-ph-cdn.tillster.com/d48ff57e-abd3-4374-8e0e-6db74f7effb4.png" class="effect" alt="Good For Sharing" style="width:70%">
+                                <h2>Good For Sharing</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-chao-fan">
+                                <img src="https://ck-ph-cdn.tillster.com/705011f6-1895-4a0a-ad1d-fbb117e96af4.png" class="effect" alt="Chao Fan" style="width:70%">
+                                <h2>Chao Fan</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-chinese-rice-meals">
+                                <img src="https://ck-ph-cdn.tillster.com/25da89ac-0441-48a0-af10-7277ed08f0a2.png" class="effect" alt="Chinese Rice Meals" style="width:70%">
+                                <h2>Chinese Rice Meals</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 2nd Grid -->
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-lauriat">
+                                <img src="https://ck-ph-cdn.tillster.com/999e3d3c-d98f-4d27-9119-58940e7f1ca3.png" class="effect" alt="Lauriat" style="width:70%">
+                                <h2>Lauriat</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-noodles">
+                                <img src="https://ck-ph-cdn.tillster.com/4b9cde86-b7d1-4d09-86f6-1e8d54a1588d.png" class="effect" alt="Noodles" style="width:70%">
+                                <h2>Noodles</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-dimsum">
+                                <img src="https://ck-ph-cdn.tillster.com/29c3d288-6089-42d3-a60c-0552baa672fc.png" class="effect" alt="Dimsum" style="width:70%">
+                                <h2>Dimsum</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 3rd Grid -->
+                    <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-breakfast">
+                                <img src="https://ck-ph-cdn.tillster.com/edacbff0-ea9e-4614-8017-025f94fb6905.png" class="effect" alt="Breakfast" style="width:70%">
+                                <h2>Breakfast</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-side-dishes">
+                                <img src="https://ck-ph-cdn.tillster.com/f6ad224f-f846-46d0-b049-4d26fe823d21.png" class="effect" alt="Side Dishes" style="width:70%">
+                                <h2>Side Dishes</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-dessert-drinks">
+                                <img src="https://ck-ph-cdn.tillster.com/b8648c2b-4edf-4f21-8bc8-b3408d5295b0.png" class="effect" alt="Dessert & Drinks" style="width:70%">
+                                <h2>Dessert &Drinks</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 4th Grid -->
+                    <div class="col-sm-3">
+                        <div class="thumbnail">
+                            <a href="https://www.chowkingdelivery.com/menu/mc-ready-to-cook">
+                                <img src="https://ck-ph-cdn.tillster.com/3210e3ec-cb1c-4554-a7b3-6cb5e32eca3d.png" class="effect" alt="Ready to Cook" style="width:70%">
+                                <h2>Ready to Cook</h2>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu -->
+            <!-- Button -->
+            <div class="buttonbuttom">
+                <button class="button" onclick="document.location='https://www.chowkingdelivery.com/menu/mc-good-for-sharing'">START NEW ORDER</button>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footermenu">
+                <ul class="no-bullets">
+                    <li>
+                        <a href="https://www.chowking.com/contact-us-customer-feedback/" target="_self">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://stores.jfc.com.ph/chowking.php" target="_self">Store Locator</a>
+                    </li>
+                    <li>
+                        <a href="https://privacy.jfc.com.ph/" target="_self">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://www.chowkingdelivery.com/terms-and-conditions" target="_self">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#myPage" target="_self">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script>
+            $(document).ready(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+                $(".navbar a, footer a[href='#myPage']").on('click', function(event) {});
+            })
+        </script>
+    </body>
+</html>
